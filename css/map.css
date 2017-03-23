@@ -1,0 +1,77 @@
+#map {
+    width: 98%;
+    height: 600px;
+    margin:10px;
+    border:1px solid gray;
+    margin-top: 25px
+}
+
+#layerContainer {
+   display:none;
+}
+
+#layerbox { 
+  position: absolute;
+  top:23px; left:-150px;
+  margin-top:-2px;
+  padding: 6px 4px;
+  text-align: left;
+  width:350px;
+  max-height:400px;
+  background-color: #fff;
+  display: none;
+  cursor:default;
+  z-index:-1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 2px;
+  width:400px;
+  margin-top: 5px;
+}
+
+#layerbox hr { 
+  height:1px;
+  border:1px;
+  color:#e2e2e2;
+  background-color:#e2e2e2;
+  margin: 1px 0;
+}
+
+*+html #layerbox hr {
+/* IE 7 hr bug fix */
+ display:block; margin: -5px 0;
+}
+
+* html #layerbox hr {
+/* IE 6 hr bug fix */
+ display:block; margin: -5px 0;
+}
+
+
+*+html #layerbox hr {
+/* IE 7 hr bug fix */
+ display:block; margin: -5px 0;
+}
+
+* html #layerbox hr {
+/* IE 6 hr bug fix */
+ display:block; margin: -5px 0;
+}
+
+#layerbox label{
+    list-style:none;
+    white-space:nowrap;
+    margin-left:5px;
+} 
+
+#layerbox input{
+  display: :inline;
+  margin-right: 2px;
+}
+
+#coords {
+  margin-left: 15px;
+  font-size: 10px
+}
+

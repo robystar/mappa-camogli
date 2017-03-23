@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mappa di Camogli</title>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.js"
+      integrity="sha256-tA8y0XqiwnpwmOIl3SGAcFl2RvxHjA8qp0+1uCGmRmg="
+      crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjBtRCk34lZRaccgkAoUvV2JpiZhAnflk&libraries=drawing"></script>
+
+    <script type="text/javascript" src="js/proj4js.js"></script>
+    <script type="text/javascript" src="js/layersData.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/map.css" />
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="coords"></div>
+    <form>
+      <p>
+        <label for="coordx">Coordinata X</label>
+        <input type="text" name="coordx" id="coordx" />
+        <label for="coordy">Coordinata Y</label>
+        <input type="text" name="coordy" id="coordy" />
+      </p>
+      <p>
+        <label for="note_geometry">Annotazioni</label>
+        <textarea name="note_geometry" id="note_geometry" rows="4" cols="50"></textarea>
+      </p>
+      <input type="text" name="geometry" id="geometry" value="9.151762 44.350338"/>
+    </form>
+
+  </body>
+</html>
